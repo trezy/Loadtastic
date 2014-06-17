@@ -1,0 +1,35 @@
+/*
+ * Global Variables
+ */
+$baseColor: #428bca;
+$baseOpacity: 0.2;
+$baseSize: 20px;
+
+
+
+
+
+/*
+ * Import Loaders
+ */
+@import 'source/quartered';
+
+
+
+
+
+/*
+ * Default loader settings
+ */
+.loading:empty:before,
+.loading:empty:after {
+  content: '';
+  display: block;
+  left: 50%;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+
+@include quartered ( $baseColor, $baseOpacity, $baseSize );

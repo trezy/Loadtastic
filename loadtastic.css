@@ -1,0 +1,47 @@
+/*
+ * Global Variables
+ */
+/*
+ * Import Loaders
+ */
+/*
+ * Default loader settings
+ */
+.loading:empty:before, .loading:empty:after {
+  content: '';
+  display: block;
+  left: 50%;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  width: 0; }
+
+.loading:empty:before, .loading:empty:after {
+  animation: loading 2s infinite linear;
+  border: 20px solid rgba(66, 139, 202, 0.2);
+  border-radius: 20px;
+  margin-left: -10px;
+  margin-top: -10px; }
+
+@keyframes loading {
+  0% {
+    transform: rotate(0) scale(1);
+    border-top-color: #428bca; }
+
+  25% {
+    transform: rotate(90deg) scale(1.1);
+    border-top-color: rgba(66, 139, 202, 0.2); }
+
+  50% {
+    transform: rotate(180deg) scale(1);
+    border-top-color: #428bca; }
+
+  75% {
+    transform: rotate(270deg) scale(1.1);
+    border-top-color: rgba(66, 139, 202, 0.2); }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+    border-top-color: #428bca; } }
+
+/*# sourceMappingURL=loadtastic.css.map */
