@@ -1,4 +1,7 @@
 /*
+ * Mixins
+ */
+/*
  * Global Variables
  */
 /*
@@ -17,30 +20,156 @@
   width: 0; }
 
 .loading:empty:before, .loading:empty:after {
+  -moz-animation: loading 2s infinite linear;
+  -o-animation: loading 2s infinite linear;
+  -webkit-animation: loading 2s infinite linear;
   animation: loading 2s infinite linear;
   border: 20px solid rgba(66, 139, 202, 0.2);
   border-radius: 20px;
   margin-left: -10px;
   margin-top: -10px; }
 
-@keyframes loading {
+@-moz-keyframes loading {
   0% {
+    -moz-transform: rotate(0) scale(1);
+    -o-transform: rotate(0) scale(1);
+    -webkit-transform: rotate(0) scale(1);
     transform: rotate(0) scale(1);
     border-top-color: #428bca; }
 
   25% {
+    -moz-transform: rotate(90deg) scale(1.1);
+    -o-transform: rotate(90deg) scale(1.1);
+    -webkit-transform: rotate(90deg) scale(1.1);
     transform: rotate(90deg) scale(1.1);
     border-top-color: rgba(66, 139, 202, 0.2); }
 
   50% {
+    -moz-transform: rotate(180deg) scale(1);
+    -o-transform: rotate(180deg) scale(1);
+    -webkit-transform: rotate(180deg) scale(1);
     transform: rotate(180deg) scale(1);
     border-top-color: #428bca; }
 
   75% {
+    -moz-transform: rotate(270deg) scale(1.1);
+    -o-transform: rotate(270deg) scale(1.1);
+    -webkit-transform: rotate(270deg) scale(1.1);
     transform: rotate(270deg) scale(1.1);
     border-top-color: rgba(66, 139, 202, 0.2); }
 
   100% {
+    -moz-transform: rotate(360deg) scale(1);
+    -o-transform: rotate(360deg) scale(1);
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+    border-top-color: #428bca; } }
+
+@-o-keyframes loading {
+  0% {
+    -moz-transform: rotate(0) scale(1);
+    -o-transform: rotate(0) scale(1);
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    border-top-color: #428bca; }
+
+  25% {
+    -moz-transform: rotate(90deg) scale(1.1);
+    -o-transform: rotate(90deg) scale(1.1);
+    -webkit-transform: rotate(90deg) scale(1.1);
+    transform: rotate(90deg) scale(1.1);
+    border-top-color: rgba(66, 139, 202, 0.2); }
+
+  50% {
+    -moz-transform: rotate(180deg) scale(1);
+    -o-transform: rotate(180deg) scale(1);
+    -webkit-transform: rotate(180deg) scale(1);
+    transform: rotate(180deg) scale(1);
+    border-top-color: #428bca; }
+
+  75% {
+    -moz-transform: rotate(270deg) scale(1.1);
+    -o-transform: rotate(270deg) scale(1.1);
+    -webkit-transform: rotate(270deg) scale(1.1);
+    transform: rotate(270deg) scale(1.1);
+    border-top-color: rgba(66, 139, 202, 0.2); }
+
+  100% {
+    -moz-transform: rotate(360deg) scale(1);
+    -o-transform: rotate(360deg) scale(1);
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+    border-top-color: #428bca; } }
+
+@-webkit-keyframes loading {
+  0% {
+    -moz-transform: rotate(0) scale(1);
+    -o-transform: rotate(0) scale(1);
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    border-top-color: #428bca; }
+
+  25% {
+    -moz-transform: rotate(90deg) scale(1.1);
+    -o-transform: rotate(90deg) scale(1.1);
+    -webkit-transform: rotate(90deg) scale(1.1);
+    transform: rotate(90deg) scale(1.1);
+    border-top-color: rgba(66, 139, 202, 0.2); }
+
+  50% {
+    -moz-transform: rotate(180deg) scale(1);
+    -o-transform: rotate(180deg) scale(1);
+    -webkit-transform: rotate(180deg) scale(1);
+    transform: rotate(180deg) scale(1);
+    border-top-color: #428bca; }
+
+  75% {
+    -moz-transform: rotate(270deg) scale(1.1);
+    -o-transform: rotate(270deg) scale(1.1);
+    -webkit-transform: rotate(270deg) scale(1.1);
+    transform: rotate(270deg) scale(1.1);
+    border-top-color: rgba(66, 139, 202, 0.2); }
+
+  100% {
+    -moz-transform: rotate(360deg) scale(1);
+    -o-transform: rotate(360deg) scale(1);
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+    border-top-color: #428bca; } }
+
+@keyframes loading {
+  0% {
+    -moz-transform: rotate(0) scale(1);
+    -o-transform: rotate(0) scale(1);
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    border-top-color: #428bca; }
+
+  25% {
+    -moz-transform: rotate(90deg) scale(1.1);
+    -o-transform: rotate(90deg) scale(1.1);
+    -webkit-transform: rotate(90deg) scale(1.1);
+    transform: rotate(90deg) scale(1.1);
+    border-top-color: rgba(66, 139, 202, 0.2); }
+
+  50% {
+    -moz-transform: rotate(180deg) scale(1);
+    -o-transform: rotate(180deg) scale(1);
+    -webkit-transform: rotate(180deg) scale(1);
+    transform: rotate(180deg) scale(1);
+    border-top-color: #428bca; }
+
+  75% {
+    -moz-transform: rotate(270deg) scale(1.1);
+    -o-transform: rotate(270deg) scale(1.1);
+    -webkit-transform: rotate(270deg) scale(1.1);
+    transform: rotate(270deg) scale(1.1);
+    border-top-color: rgba(66, 139, 202, 0.2); }
+
+  100% {
+    -moz-transform: rotate(360deg) scale(1);
+    -o-transform: rotate(360deg) scale(1);
+    -webkit-transform: rotate(360deg) scale(1);
     transform: rotate(360deg) scale(1);
     border-top-color: #428bca; } }
 

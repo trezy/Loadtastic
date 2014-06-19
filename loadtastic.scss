@@ -1,4 +1,14 @@
 /*
+ * Mixins
+ */
+@import 'source/mixins/prefixAttribute';
+@import 'source/mixins/animation';
+
+
+
+
+
+/*
  * Global Variables
  */
 $baseColor: #428bca;

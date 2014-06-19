@@ -1,0 +1,9 @@
+@mixin prefixAttribute ( $key, $value ) {
+  $prefixes: ( moz, o, webkit );
+
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$key}: #{$value};
+  };
+
+  #{$key}: #{$value};
+}
